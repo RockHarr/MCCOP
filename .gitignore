@@ -1,0 +1,29 @@
+# Dependencias
+node_modules/
+dist/
+
+# Variables de entorno (¡NUNCA commitear!)
+.env
+*.env.local
+*.env.production
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editores y OS
+.DS_Store
+.vscode/
+*.swp
+*.swo
+Thumbs.db
+
+# Vite / Build
+frontend/dist/
+frontend/.vite/
+
+# TypeScript compilado
+backend/dist/
+
+# Supabase local (si usas CLI)
+.supabase/
