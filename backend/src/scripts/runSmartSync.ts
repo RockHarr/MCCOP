@@ -56,8 +56,8 @@ async function main() {
       process.exit(0);
     }
 
-    // 3. Limitar a las primeras 20 para no saturar en el primer sync
-    const LIMIT = 20;
+    // 3. Limitar a las primeras 50 para tener más datos
+    const LIMIT = 50;
     const toProcess = filtered.slice(0, LIMIT);
     console.log(`[SmartSync] Procesando las primeras ${toProcess.length} licitaciones...\n`);
 
