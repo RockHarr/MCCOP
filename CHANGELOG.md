@@ -4,6 +4,51 @@ Todos los cambios notables del proyecto siguen el formato [Keep a Changelog](htt
 
 ---
 
+## [0.2.1] — 2026-03-12
+
+### Añadido
+
+- **🆕 SmartSync Script** (`runSmartSync.ts`): Sincronización inteligente que filtra licitaciones activas por keywords TI ANTES de descargar detalles
+  - Procesa solo licitaciones relevantes (ahorro de tiempo y respeto de rate limits)
+  - 30+ keywords de filtrado pre-configuradas para rubro informático
+- **Motor de Scoring Contextual Mejorado**:
+  - 23+ exclusiones contextuales automáticas para eliminar falsos positivos
+  - Distingue entre "desarrollo de software" vs "desarrollo comunitario"
+  - Matching de palabras completas (regex) en vez de subcadenas
+  - Filtrado por contexto con máxima prioridad
+- **Header Superior con Avatar**:
+  - Avatar circular con iniciales del usuario (gradiente brand)
+  - Menú dropdown con información de cuenta y logout
+  - Botón de configuración visible en header
+- **Configuración con Tabs**:
+  - Tab "Perfil de Negocio" separado de "Palabras Clave"
+  - Mejor organización visual y UX
+  - Inputs con estados focus mejorados
+- **Tooltips Explicativos en Dashboard**:
+  - Banner informativo sobre el Score
+  - Tooltip interactivo en cada badge de score
+  - Visualización mejorada de keywords coincidentes con íconos
+- **README Profesional**:
+  - Badges de tecnologías
+  - Instalación paso a paso
+  - Roadmap completo con 20+ mejoras futuras
+  - Arquitectura documentada
+  - Screenshots placeholder
+
+### Corregido
+
+- Falsos positivos en scoring (ej: "medicamentos" ya no coincide con keywords de TI)
+- Layout de configuración más organizado y menos caótico
+- Mejora en accesibilidad con tooltips y explicaciones visuales
+
+### Publicado
+
+- **Repositorio GitHub**: https://github.com/RockHarr/MCCOP
+- Commit inicial con 7254+ líneas de código
+- Branch `main` configurado
+
+---
+
 ## [0.2.0] — 2026-03-10
 
 ### Añadido
