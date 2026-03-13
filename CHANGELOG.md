@@ -46,6 +46,11 @@ Todos los cambios notables del proyecto siguen el formato [Keep a Changelog](htt
 - **Repositorio GitHub**: https://github.com/RockHarr/MCCOP
 - Commit inicial con 7254+ líneas de código
 - Branch `main` configurado
+- **Deployment a Vercel**:
+  - Configuración automática con `vercel.json`
+  - SPA routing para Vue Router
+  - Variables de entorno configuradas (Supabase)
+  - Build optimizado desde directorio `frontend`
 
 ---
 
